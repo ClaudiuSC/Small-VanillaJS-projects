@@ -1,1 +1,1 @@
-Small app that takes emojis(strings) from an input and adds them to an array which is then rendered. It has four buttons, two that add emojis at the end or beggining of the list and two buttons that remove the emojis from the end or beggining
+Small app that takes emojis(strings) from an input field and adds them to an array which is then rendered. It has four buttons, two that add emojis at the end or beggining of the list and two buttons that remove the emojis from the end or beggining
