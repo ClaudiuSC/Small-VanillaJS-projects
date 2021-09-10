@@ -1,3 +1,3 @@
-# Small-VanillaJS-projects
+# VanillaJS-projects
 
-As the name says, these are small projects meant to improve my JS skills
+Projects meant to improve and sharpen my JS skills.
