@@ -19,7 +19,7 @@ resetGameBtn.addEventListener("click", ()=> {
     diceTwo.textContent = "-"
     scoreOne.textContent= "0"
     scoreTwo.textContent= "0"
-    playerTurn.textContent ="1 Turn"
+    playerTurn.textContent ="Player 1 Turn"
     switchActiveClass(rollDiceBtn, resetGameBtn)
 })
 
@@ -29,7 +29,7 @@ function play() {
     trackScoreOne += dice
     scoreOne.textContent = trackScoreOne
     diceOne.textContent = dice
-    playerTurn.textContent ="2 Turn"
+    playerTurn.textContent ="Player 2 Turn"
     switchActiveClass(diceTwo, diceOne)
     checkScore()
   } else {
@@ -37,7 +37,7 @@ function play() {
     trackScoreTwo += dice
     scoreTwo.textContent = trackScoreTwo
     diceTwo.textContent = dice
-    playerTurn.textContent ="1 Turn" 
+    playerTurn.textContent ="Player 1 Turn" 
     switchActiveClass(diceOne, diceTwo)
     checkScore()
   }
@@ -46,10 +46,10 @@ function play() {
 
 function checkScore() {
   if(trackScoreOne >= 20) {
-    playerTurn.textContent ="1 Has Won 🥳"
+    playerTurn.textContent ="Player 1 Has Won 🥳"
     switchActiveClass(resetGameBtn, rollDiceBtn)
   } else if(trackScoreTwo >= 20) {
-    playerTurn.textContent ="2 Has Won 🎉"
+    playerTurn.textContent ="Player 2 Has Won 🎉"
     switchActiveClass(resetGameBtn, rollDiceBtn)
   }
 }
