@@ -3,7 +3,7 @@ The numbers on the dice add up and the first to reach a score of 20 wins.
 When one player wins he is declared winner and a reset button appears with wich you cand start a new game.
 
 
-Improvements:
+**Improvements:
 * because player 1 always starts first he has the most chances to win => randomise the player which starts first.
 * double or nothing button;
 * add animation on dices.
