@@ -12,7 +12,7 @@ let trackScoreTwo = 0
 rollDiceBtn.addEventListener("click", () => play())
 
 resetGameBtn.addEventListener("click", ()=> {    
-    turn = 1
+    turn = true
     trackScoreOne = 0
     trackScoreTwo = 0
     diceOne.textContent = "-"
@@ -21,25 +21,31 @@ resetGameBtn.addEventListener("click", ()=> {
     scoreTwo.textContent= "0"
     playerTurn.textContent ="Player 1 Turn"
     switchActiveClass(rollDiceBtn, resetGameBtn)
+    diceOne.classList.remove("animation")
+    diceOne.classList.add("active")
 })
 
 function play() {
   if (turn) {
+    shakeDice(diceOne, diceTwo)
     const dice = Math.floor(Math.random() * 6 + 1)
     trackScoreOne += dice
-    scoreOne.textContent = trackScoreOne
-    diceOne.textContent = dice
-    playerTurn.textContent ="Player 2 Turn"
-    switchActiveClass(diceTwo, diceOne)
-    checkScore()
+    setTimeout(()=>{scoreOne.textContent = trackScoreOne
+                    playerTurn.textContent ="Player 2 Turn"
+                    diceOne.textContent = dice   
+                    checkScore()
+                    if(trackScoreOne < 20) {switchActiveClass(diceTwo, diceOne)}
+                  }, 450)    
   } else {
+    shakeDice(diceTwo, diceOne)
     const dice = Math.floor(Math.random() * 6 + 1)
     trackScoreTwo += dice
-    scoreTwo.textContent = trackScoreTwo
-    diceTwo.textContent = dice
-    playerTurn.textContent ="Player 1 Turn" 
-    switchActiveClass(diceOne, diceTwo)
-    checkScore()
+    setTimeout(()=>{scoreTwo.textContent = trackScoreTwo
+                    playerTurn.textContent ="Player 1 Turn" 
+                    diceTwo.textContent = dice
+                    checkScore()
+                    if(trackScoreTwo < 20) {switchActiveClass(diceOne, diceTwo)}
+                  }, 450)
   }
   turn = !turn
 } 
@@ -59,4 +65,8 @@ function switchActiveClass(a, b) {
   b.classList.remove("active")
 }
 
+function shakeDice(a, b) {
+  a.classList.add("animation")
+  b.classList.remove("animation")
+}
 
