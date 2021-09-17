@@ -4,3 +4,6 @@ When one player wins he is declared winner and a reset button appears with wich 
 
 Improvements:
 -because player 1 always starts first he has the most chances to win => randomise the player which starts first.
+-double or nothing button;
+-add animation on dices.
+-a flying cow could randomly apper and steal one of the players points.
