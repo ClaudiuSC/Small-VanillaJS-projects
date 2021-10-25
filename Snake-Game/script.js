@@ -82,6 +82,8 @@ function redirectSnake(e) {
   // prevent self collision
   if (direction + prevDirection === 0) {
     direction = direction * -1;
+  } else if (snake.includes(snake[0] + direction)) {
+    direction = prevDirection;
   }
   // --------------------------------------
 }
