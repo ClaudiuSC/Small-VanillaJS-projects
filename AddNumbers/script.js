@@ -10,6 +10,6 @@ btnEl.addEventListener("click", () => {
     }
     sumEl.textContent = sum;
   } else {
-    sumEl.textContent = "Enter a number from 1 to 100!";
+    sumEl.textContent = "Enter a number from 1 to 1000!";
   }
 });
