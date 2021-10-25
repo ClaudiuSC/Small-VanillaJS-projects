@@ -24,9 +24,7 @@ const divBoxes = document.querySelectorAll(".box");
 
 // generate snake
 function generateSnake() {
-  for (let i = 0; i < snake.length; i++) {
-    divBoxes[snake[i]].classList.add("snake");
-  }
+  snake.forEach((index) => divBoxes[index].classList.add("snake"));
 }
 
 generateSnake();
@@ -113,9 +111,7 @@ function start() {
   snakeInterval = setInterval(moveSnake, timeInterval);
   direction = 1;
   prevDirection = 1;
-  for (let i = 0; i < snake.length; i++) {
-    divBoxes[snake[i]].classList.remove("snake");
-  }
+  snake.forEach((index) => divBoxes[index].classList.remove("snake"));
   divBoxes[randomNo].classList.remove("apple");
   snake = [3, 2, 1];
   generateApple();
