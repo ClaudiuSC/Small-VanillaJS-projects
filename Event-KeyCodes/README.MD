@@ -4,5 +4,5 @@ The app shows you both the "keyCode" property of the key, which is deprecated an
 
 Noteworthy features:
 * **ternary operator** which is used as a shorthand for an if statement  
-* **template literals  
-* **event listener.
+* template literals  
+* event listener.
