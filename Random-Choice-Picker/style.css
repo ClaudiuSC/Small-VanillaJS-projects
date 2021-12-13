@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  flex-direction: column;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.tags {
+  padding: .5em 2em;
+  background-color: cornflowerblue;
+  color: whitesmoke;
+  border-radius: 100px;
+  display: inline-block;
+  margin: 1em .5em;
+  text-transform: capitalize;
+}
+
+.tags.active {
+  background-color: purple;
+}
+
+p ~ p {
+  margin-top: 0;
+}
+
+p {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+textarea {
+  font-size: 1.2rem;
+}
+
+.accent {
+  font-size: 2.5rem;
+  border: 1px solid black;
+  padding: .15em;
+}
+
+.svg {
+  width: 50px;
+  height: 50px;
+  font-weight: bold;
+  font-size: 3rem;
+}
