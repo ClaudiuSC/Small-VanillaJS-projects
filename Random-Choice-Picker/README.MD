@@ -3,7 +3,7 @@ After the elements are rendered a function runs for a couple of seconds which hi
 In the end one of the elements remains highlighted, which is the random choice from the users list.
 
 Other features:
-- textarea is focused when page is loaded;
+- textarea is focused when the page is loaded;
 - empty spaces are not rendered, even between commas(.split(",") function is used to generate and array);
 - app runs only if textarea has some content, it doesn't render anything if empty;
-- not visible to the user: i used .replace() function on the string retrieved from the textarea to remove unwanted new line tags(eg \n\r).
+- used .replace() function on the string retrieved from the textarea to remove unwanted new line tags(eg \n\r) that otherwise would have been rendered with the choices.
