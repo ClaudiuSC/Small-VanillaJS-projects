@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>getUsers</title>
+</head>
+<body>
+    
+    <h1>Task:</h1>
+    <p>Call an JSONPlaceholder api, get 10 users. Implement a function getUsers() that returns only names and emails of the users whose names contain letter "k".</p>
+
+    <fieldset>
+        <legend>Example:</legend>
+        <p><span>console.log</span>(getUsers("http://jsonplaceholder.typicode.com/users"))</p>
+        <p>// [{name:Kate,email:kate@gmail.com},{name:Kyle,email:kyle@me.com}]</p>
+    </fieldset>
+
+    <form id="form">
+        <fieldset>
+            <legend>Solution:</legend>
+            <input type="text" id="search">
+            <button id="submit" type="submit">Get Users</button>
+        </fieldset>
+    </form>
+    
+    <div id="solution"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
